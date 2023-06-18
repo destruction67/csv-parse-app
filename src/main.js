@@ -30,6 +30,7 @@ import {AlertService} from "@/service/AlertService";
 
 Vue.config.productionTip = false
 
+
 global.$ = $;
 global.__ = __;
 
