@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Main from "@/views/Main";
-import TaskList from "@/views/task/TaskList";
+import CustomerInvite from "@/views/customer/CustomerInvite";
 
 
 Vue.use(VueRouter)
@@ -19,8 +19,8 @@ const routes = [
     children:[
       {
         path: '',
-        name: 'TaskList',
-        component: TaskList,
+        name: 'CustomerInvite',
+        component: CustomerInvite,
       },
 
     ]

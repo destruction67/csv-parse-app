@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-blue2">
     <router-link :to="{ name: 'Home' }" class="navbar-brand" tag="a">
-     TASK MGMT
+     CSV PARSE
     </router-link>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -18,8 +18,8 @@
 
         <li class="nav-item">
           <router-link class="nav-link"
-                       :to="{name:'TaskList'}"
-                       :class="{ 'active' : isActiveRoute('TaskList')}">
+                       :to="{name:'CustomerInvite'}"
+                       :class="{ 'active' : isActiveRoute('CustomerInvite')}">
             <font-awesome-icon icon="list-check" class="ml-2 mr-1" />
             List
           </router-link>

@@ -1,7 +1,7 @@
-# task-mgmt-app
+# csv-parse-app
 Run the following commands inside the folder directory
 
-ex. D:\Documents\projects\task-mgmt-app
+ex. D:\Documents\projects\csv-parse-app
 
 ### Step 1: Install the project's dependencies.
 ```

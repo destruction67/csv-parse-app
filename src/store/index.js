@@ -3,11 +3,11 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-import Task from "@/store/modules/task/task_list.module";
+import Customer from "@/store/modules/customer/customer.module";
 
 const modules = () => {
   return {
-    Task,
+    Customer,
   }
 }
 

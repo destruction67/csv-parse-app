@@ -109,13 +109,15 @@ export const AlertService = {
   },
 
   // success
-  successAlert (text, actionType = '', html) {
-    let ht = html ? html : ''
+  successAlert(text, actionType = '', html) {
+    let ht = html ? html : '';
+    const styledAction = `<div style="margin-left: 10px">${actionType}</div>`;
+    const styledText = `<div>${text}</div>`;
+
     return swal.fire({
-      title: `${actionType}`,
-      icon: `success`,
-      text: `${text}`,
-      html: `${ht}`,
+      title: `${styledAction}${ht}`,
+      icon: 'success',
+      html: `${styledText}${ht}`,
 
       toast: true,
       position: 'top-end',
@@ -123,14 +125,12 @@ export const AlertService = {
       timer: 3000,
       timerProgressBar: true,
       didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-      }
-
-    }).then(r => {
-      return r.value
-
-    })
+        toast.addEventListener('mouseenter', Swal.stopTimer);
+        toast.addEventListener('mouseleave', Swal.resumeTimer);
+      },
+    }).then((r) => {
+      return r.value;
+    });
   },
 
   successAlert2 (text, actionType = '', html) {

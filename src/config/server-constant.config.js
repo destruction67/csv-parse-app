@@ -1,10 +1,10 @@
 
 export const API_URL = {
     index(){
-        return 'http://localhost/task-mgmt-api/public/api/v1/' + API_TASK_MGMT;
+        return 'http://localhost/csv-parse-api/public/api/v1/' + API_CSV_PARSE;
     }
 };
 
-export const API_TASK_MGMT = 'task-mgmt/'
+export const API_CSV_PARSE = 'csv-parse/'
 
-export default { API_URL, API_TASK_MGMT }
+export default { API_URL, API_CSV_PARSE }

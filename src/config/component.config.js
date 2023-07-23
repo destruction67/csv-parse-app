@@ -67,7 +67,6 @@ export const ComponentConfig = {
     },
 
     customComponents(){
-        Vue.component('task-mgmt-pagination',Pagination);
     },
 
 };
